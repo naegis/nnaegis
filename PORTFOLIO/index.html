@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAEGIS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" type="image/png" href="me.png">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<nav id="navbar">
+    
+    <div class="logo-container">
+        <a href="#welcome-section">
+        <h1>naegis</h1>
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#Skills">tech</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li ><a href="#Connect">connect</li></a>
+    </ul>
+</nav>
+
+</header>
+
+
+
+
+
+<div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+        <div class="bg"></div>
+
+<section class="welcome-section" id="welcome-section">
+    
+    <svg viewBox="0 0 128 128" height="128" width="128" class="star">
+        <defs>
+          <filter id="star-glow">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="coloredBlur"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+          <linearGradient y2="1" x2="0" y1="0" x1="0" id="star-grad">
+            <stop stop-color="#000" offset="0%"></stop>
+            <stop stop-color="#fff" offset="100%"></stop>
+          </linearGradient>
+          <mask id="star-mask">
+            <rect fill="url(#star-grad)" height="128" width="128" y="0" x="0"></rect>
+          </mask>
+        </defs>
+        <g
+          stroke-width="2"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          fill="none"
+        >
+          <g stroke="rgb(50, 50, 50)">
+
+            <polygon
+              points="64 19 70.966 48.975 85.213 42.787 79.025 57.034 109 64 79.025 70.966 85.213 85.213 70.966 79.025 64 109 57.034 79.025 42.787 85.213 48.975 70.966 19 64 48.975 57.034 42.787 42.787 57.034 48.975 64 19"
+            ></polygon>
+            <polygon
+              points="64 4 73.287 43.966 92.284 35.716 84.034 54.713 124 64 84.034 73.287 92.284 92.284 73.287 84.034 64 124 54.713 84.034 35.716 92.284 43.966 73.287 4 64 43.966 54.713 35.716 35.716 54.713 43.966 64 4"
+            ></polygon>
+          </g>
+          <g filter="url(#star-glow)">
+            <g stroke="#f8ff95">
+
+              <polygon
+                points="64 19 70.966 48.975 85.213 42.787 79.025 57.034 109 64 79.025 70.966 85.213 85.213 70.966 79.025 64 109 57.034 79.025 42.787 85.213 48.975 70.966 19 64 48.975 57.034 42.787 42.787 57.034 48.975 64 19"
+                stroke-dasharray="93 300"
+                class="star__stroke star__stroke--3"
+              ></polygon>
+              <polygon
+                points="64 4 73.287 43.966 92.284 35.716 84.034 54.713 124 64 84.034 73.287 92.284 92.284 73.287 84.034 64 124 54.713 84.034 35.716 92.284 43.966 73.287 4 64 43.966 54.713 35.716 35.716 54.713 43.966 64 4"
+                stroke-dasharray="124 400"
+                class="star__stroke star__stroke--4"
+              ></polygon>
+            </g>
+            <g mask="url(#star-mask)" stroke="#f8ff95">
+
+              <polygon
+                points="64 19 70.966 48.975 85.213 42.787 79.025 57.034 109 64 79.025 70.966 85.213 85.213 70.966 79.025 64 109 57.034 79.025 42.787 85.213 48.975 70.966 19 64 48.975 57.034 42.787 42.787 57.034 48.975 64 19"
+                stroke-dasharray="93 279"
+                class="star__stroke star__stroke--3"
+              ></polygon>
+              <polygon
+                points="64 4 73.287 43.966 92.284 35.716 84.034 54.713 124 64 84.034 73.287 92.284 92.284 73.287 84.034 64 124 54.713 84.034 35.716 92.284 43.966 73.287 4 64 43.966 54.713 35.716 35.716 54.713 43.966 64 4"
+                stroke-dasharray="124 372"
+                class="star__stroke star__stroke--4"
+              ></polygon>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+      
+    
+
+
+    <div class="welcome-text glass">
+        <div class="welcome-text2">
+            <h1 id="intro">Hello! I am<br>
+                <button class="button0" data-text="Awesome">
+                    <span class="actual-text">&nbsp;naegis.&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;naegis.&nbsp;</span>
+                </button>
+            </h1>
+            <h2 id="intro3">
+
+
+                Based in Manila, I'm an aspiring <span class="and">Fullstack <br>
+                Software Engineer </span> and curently a sophomore <br>
+                from De La Salle University - Dasmarinas. </h2>
+
+        </hiv>
+        <a href="#connect"></button><button class="button" >Connect with me!</button></a>
+        <button class="button" onclick = "downloadFile()">Download CV</button>
+    </div>
+    
+    
+
+</section>
+
+
+
+<svg class="svg"
+xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 450"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="33" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="38" ry="41" cx="783.9232495506511" cy="327.569137695338" fill="hsla(55, 51%, 74%, 1.00)"></ellipse><ellipse rx="38" ry="41" cx="378.8571194372802" cy="304.7890345983875" fill="hsla(48, 48%, 76%, 1.00)"></ellipse><ellipse rx="38" ry="41" cx="112.72174230383905" cy="114.51546305374714" fill="hsl(58, 100%, 71%)"></ellipse></g></svg>
+    
+    
+   
+    <section class="skills-section" id="Skills">
+    
+    <div class="project-tile">
+    <div class="section-title">
+        <h1>technologies<span class="and">.</span></h1>
+    </div>
+    <div class="box-container">
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                        </svg>
+                    <h2>HTML</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+                        </svg>
+                    <h2>CSS</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
+                        </svg>
+                    <h2>JAVASCRIPT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#1565c0" d="M32.1,25.1c1.8-0.4,3.2,0.7,3.2,2c0,2.9-4,5.6-4,5.6s6.2-0.7,6.2-5.5 C37.5,24.1,34.5,23.3,32.1,25.1z M29.1,27.4c0,0,1.9-1.4,2.5-1.9c-4.8,1-15.6,1.1-15.6,0.3c0-0.8,3.5-1.6,3.5-1.6 s-7.8-0.1-7.8,2.2S21.9,28.9,29.1,27.4z"></path><path fill="#1565c0" d="M27.9,29.6c-4.5,1.5-12.8,1-10.4-1c-1.2,0-3,1-3,1.9c0,1.9,9,3.3,15.6,0.6L27.9,29.6z"></path><path fill="#1565c0" d="M18.7,32.7c-1.6,0-2.7,1.1-2.7,1.8c0,2.4,9.8,2.6,13.6,0.2l-2.5-1.6C24.3,34.4,17,34.6,18.7,32.7z"></path><path fill="#1565c0" d="M36.3,36.6c0-0.9-1.1-1.4-1.4-1.6c2.2,5.4-22.3,5-22.3,1.8c0-0.7,1.8-1.4,3.5-1.1l-1.4-0.8 C11.3,34.4,9,35.8,9,37C9,42.5,36.3,42.3,36.3,36.6z"></path><path fill="#1565c0" d="M39,38.6c-4.1,4.1-14.7,5.6-25.2,3.1C24.3,46.2,39,43.6,39,38.6z"></path><g><path fill="#f44336" d="M23.6,24.9c-1-1.6-1.7-2.9-2.7-5.5c-1.7-4.2,10.3-8.1,5.4-15.4c2.1,5.1-7.6,8.2-8.5,12.5 C17.1,20.4,23.6,24.9,23.6,24.9z"></path><path fill="#f44336" d="M24.1,18.7c0.9,2.3,3.9,4,0.7,7c6-2.2,3.5-5.6,2.2-7.8c-1.7-2.6,5.8-6.8,5.8-6.8 C27.4,11.7,22.9,14.3,24.1,18.7z"></path></g>
+                        </svg>
+                    <h2>JAVA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#0277bd" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22	h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104	c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672	C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498	c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#ffc107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343	h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104	c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672	C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498	c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+                        </svg>
+                    <h2>PYTHON</h2>
+                </div>
+            </div>
+        </div>    
+
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7l0,0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7l0,0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7l0,0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7l0,0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                        </svg>
+                    <h2>FIGMA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#2100c4" d="M24,4C12.954,4,4,12.954,4,24c0,8.887,5.801,16.411,13.82,19.016h12.36 C38.199,40.411,44,32.887,44,24C44,12.954,35.046,4,24,4z"></path><path fill="#ddbaff" d="M37,23.5c0-2.897-0.875-4.966-2.355-6.424C35.591,15.394,34.339,12,34.339,12 c-2.5,0.5-4.367,1.5-5.609,2.376C27.262,14.115,25.671,14,24,14c-1.71,0-3.339,0.118-4.834,0.393 c-1.242-0.879-3.115-1.889-5.632-2.393c0,0-1.284,3.492-0.255,5.146C11.843,18.6,11,20.651,11,23.5 c0,6.122,3.879,8.578,9.209,9.274C19.466,33.647,19,34.764,19,36l0,0.305c-0.163,0.045-0.332,0.084-0.514,0.108 c-1.107,0.143-2.271,0-2.833-0.333c-0.562-0.333-1.229-1.083-1.729-1.813c-0.422-0.616-1.263-2.032-3.416-1.979 c-0.376-0.01-0.548,0.343-0.5,0.563c0.043,0.194,0.213,0.5,0.896,0.75c0.685,0.251,1.063,0.854,1.438,1.458 c0.418,0.674,0.417,2.468,2.562,3.416c1.53,0.677,2.988,0.594,4.097,0.327l0.001,3.199c0,0.639-0.585,1.125-1.191,1.013 C19.755,43.668,21.833,44,24,44c2.166,0,4.243-0.332,6.19-0.984C29.584,43.127,29,42.641,29,42.002L29,36 c0-1.236-0.466-2.353-1.209-3.226C33.121,32.078,37,29.622,37,23.5z"></path><path fill="#ddbaff" d="M15,18l3.838-1.279c1.01-0.337,1.231-1.684,0.365-2.302l-0.037-0.026 c-2.399,0.44-4.445,1.291-5.888,2.753C13.596,17.658,14.129,18,15,18z"></path><path fill="#ddbaff" d="M28.693,14.402c-0.878,0.623-0.655,1.987,0.366,2.327L32.872,18c0.913,0,1.461-0.37,1.773-0.924 c-1.46-1.438-3.513-2.274-5.915-2.701C28.717,14.384,28.705,14.393,28.693,14.402z"></path><path fill="#ddbaff" d="M24,31c-1.525,0-2.874,0.697-3.791,1.774C21.409,32.931,22.681,33,24,33s2.591-0.069,3.791-0.226 C26.874,31.697,25.525,31,24,31z"></path>
+                        </svg>
+                    <h2>GITHUB</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                        <linearGradient id="SVGID_1__xBKl2pdJg5kk_gr1" x1="32" x2="32" y1="5.34" y2="56.998" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#SVGID_1__xBKl2pdJg5kk_gr1)" d="M57.9,28.5L35.5,6.1c-0.9-0.9-2.2-1.5-3.5-1.5s-2.6,0.5-3.5,1.5L6.1,28.5c-0.9,0.9-1.5,2.2-1.5,3.5	s0.5,2.6,1.5,3.5l22.3,22.3c0.9,0.9,2.2,1.5,3.5,1.5s2.6-0.5,3.5-1.5l22.3-22.3c0.9-0.9,1.5-2.2,1.5-3.5S58.8,29.4,57.9,28.5z M56.5,34.1L34.1,56.5c-1.1,1.1-3.1,1.1-4.2,0L7.5,34.1C7,33.6,6.7,32.8,6.7,32s0.3-1.6,0.9-2.1l16-16l6.5,6.5h0V43h2V22.4	l10.8,10.8l1.4-1.4L24.9,12.5l5-5C30.4,7,31.2,6.7,32,6.7s1.6,0.3,2.1,0.9l22.3,22.3c0.6,0.6,0.9,1.3,0.9,2.1S57,33.6,56.5,34.1z"></path><linearGradient id="SVGID_2__xBKl2pdJg5kk_gr2" x1="31" x2="31" y1="39" y2="47.213" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><circle cx="31" cy="43" r="4" fill="url(#SVGID_2__xBKl2pdJg5kk_gr2)"></circle><linearGradient id="SVGID_3__xBKl2pdJg5kk_gr3" x1="31" x2="31" y1="17.043" y2="24.326" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><circle cx="31" cy="21" r="4" fill="url(#SVGID_3__xBKl2pdJg5kk_gr3)"></circle><g><linearGradient id="SVGID_4__xBKl2pdJg5kk_gr4" x1="43" x2="43" y1="28.021" y2="35.733" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><circle cx="43" cy="32" r="4" fill="url(#SVGID_4__xBKl2pdJg5kk_gr4)"></circle></g>
+                        </svg>
+                    <h2>GIT BASH</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path><path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
+                        </svg>
+                    <h2>VSCODE</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                        </svg>
+                    <h2>GSUITE</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#ff5722" d="M6 6H22V22H6z" transform="rotate(-180 14 14)"></path><path fill="#4caf50" d="M26 6H42V22H26z" transform="rotate(-180 34 14)"></path><path fill="#ffc107" d="M26 26H42V42H26z" transform="rotate(-180 34 34)"></path><path fill="#03a9f4" d="M6 26H22V42H6z" transform="rotate(-180 14 34)"></path>
+                        </svg>
+                    <h2>MS APPS</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardS2">
+            <div class="cardS">
+                <div class="card2S">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                        <linearGradient id="PrnUf0f3Ehh235HvSBQODa_3L5mzkJqD246_gr1" x1="32" x2="32" y1="3338.359" y2="3383.952" gradientTransform="translate(0 -3329.276)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#PrnUf0f3Ehh235HvSBQODa_3L5mzkJqD246_gr1)" d="M50,55H14c-2.76,0-5-2.24-5-5V14c0-2.76,2.24-5,5-5h36c2.76,0,5,2.24,5,5v36	C55,52.76,52.76,55,50,55z M14,11c-1.65,0-3,1.35-3,3v36c0,1.65,1.35,3,3,3h36c1.65,0,3-1.35,3-3V14c0-1.65-1.35-3-3-3H14z"></path><linearGradient id="PrnUf0f3Ehh235HvSBQODb_3L5mzkJqD246_gr2" x1="31.921" x2="31.921" y1="49.276" y2="17.561" gradientTransform="matrix(1 0 0 -1 0 65.276)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><path fill="url(#PrnUf0f3Ehh235HvSBQODb_3L5mzkJqD246_gr2)" d="M28.84,47.715 c-5.844,0-11.382-3.427-13.821-9.077c-3.238-7.496,0.014-16.093,7.403-19.569l6.014-2.83c1.248-0.589,2.738-0.052,3.326,1.197 s0.052,2.738-1.197,3.326l-6.014,2.83c-4.933,2.321-7.104,8.06-4.942,13.063c2.104,4.872,7.66,7.27,12.647,5.455l8.818-3.207 c3.009-1.094,4.657-4.356,3.754-7.428c-0.49-1.665-1.672-3.045-3.242-3.784c-1.571-0.738-3.389-0.771-4.982-0.087l-7.811,3.348 c-0.491,0.21-0.862,0.603-1.047,1.104c-0.184,0.501-0.153,1.04,0.086,1.518c0.463,0.928,1.563,1.315,2.51,0.89l7.124-3.239 c1.257-0.572,2.739-0.015,3.311,1.242c0.572,1.257,0.015,2.738-1.242,3.311l-7.124,3.238c-3.403,1.544-7.38,0.139-9.051-3.206 c-0.849-1.696-0.961-3.691-0.308-5.474c0.653-1.781,2.027-3.231,3.771-3.979l7.81-3.348c2.908-1.247,6.22-1.188,9.082,0.159 c2.863,1.348,5.018,3.861,5.91,6.897c1.646,5.597-1.359,11.543-6.842,13.537l-8.818,3.207 C32.277,47.423,30.545,47.715,28.84,47.715z"></path>
+                        </svg>
+                    <h2>CLIP STUDIO</h2>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</section>
+
+
+<section class="two" id="projects">
+    <div class="project-tile">
+    <div class="section-title">
+        <h1>projects<span class="and">.</span></h1>
+    </div>
+
+    <div class="box-container2">
+
+    <div class="card0">
+        <img src="artgallery.png" alt="Project Description" class="card__image">  <div class="card__content">
+          <p class="card__title">Artwork Portfolio</p>
+          <p class="card__description">
+            <strong><span class="and">HTML ◊ CSS ◊ JAVASCRIPT</span></strong> <br>
+            A multi-page and responsive website made to showcase all my digital work. 
+            The user may open one of the displayed artworks and there are options to go back, next, and exit.
+            </p>
+            <a href="https://naegis-portfolio2.vercel.app/index.html"><button class="card__button">Check</button></a>
+            <a href="https://github.com/naegis/Naegis_Portfolio2"><button class="card__button secondary">Source Code</button></a>
+        </div>
+      </div>
+
+    <div class="card0">
+    <img src="lamon-lasalle.png" alt="Project Description" class="card__image">  <div class="card__content">
+        <p class="card__title">Lamon La Salle!</p>
+        <p class="card__description">
+            <strong><span class="and">HTML ◊ CSS</span></strong> <br>
+            
+            Lamon-Lasalle is a website I built for online food ordering in DLSU-D. 
+            It is supposed to showcase menus from Cafe Museo, Food Square, and Mila's.
+            </p>
+            <a href="https://lamon-lasalle.vercel.app/"><button class="card__button">Check</button></a>
+            <a href="https://github.com/naegis/Lamon-Lasalle"><button class="card__button secondary">Source Code</button></a>
+    </div>
+    </div>  
+
+    <div class="card0">
+        <img src="first.png" alt="Project Description" class="card__image">  <div class="card__content">
+            <p class="card__title">Art Gallery</p>
+            <p class="card__description">
+                <strong><span class="and">HTML ◊ CSS ◊ JAVASCRIPT</span></strong> <br>
+                
+                This is the project I made to learn HTML, CSS, and JavaScript Fundamentals.
+                The user can open the pictures displayed and close it in the one-page website.
+
+                </p>
+                <a href="https://naegisart-d4pdla6se-naegis.vercel.app/"><button class="card__button">Check</button></a>
+                <a href="https://github.com/naegis/Naegis_ArtPortfolio"><button class="card__button secondary">Source Code</button></a>
+        </div>
+        </div>  
+      
+      
+    </div>
+</div>
+
+</section>
+
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 450"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="33" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="38" ry="41" cx="698.2090292707196" cy="345.72890494262344" fill="hsla(55, 51%, 74%, 1.00)"></ellipse><ellipse rx="38" ry="41" cx="311.30263302689866" cy="103.57835008965276" fill="hsla(48, 77%, 62%, 1.00)"></ellipse><ellipse rx="38" ry="41" cx="109.08978441812224" cy="316.4524987211529" fill="hsla(55, 70%, 65%, 1.00)"></ellipse></g></svg>
+
+
+
+<section class="two">
+    <div class="project-tile">
+    <div class="section-title">
+        <h1>design prototypes<span class="and">.</span></h1>
+    </div>
+
+    <div class="box-container2">
+    <div class="card0">
+        <img src="medgrocer.png" alt="Project Description" class="card__image">  <div class="card__content">
+          <p class="card__title">MedGrocer</p>
+          <p class="card__description">
+            <strong><span class="and">Healthcare E-Commerce Website</span></strong> <br>
+            UI/UX Design prototype for KadaKareer Virtual Apprenticeship. Made with a team of 4 people,
+            w have made a home page, sign-in page, and a products page.
+            </p>
+            <a href="https://www.figma.com/proto/f4FBq1ojxsfU7IoEVyWks7/MedGrocer?node-id=1-2&starting-point-node-id=1%3A2&scaling=min-zoom&t=f62HQM9P84smoHeJ-1"><button class="card__button">Live View</button></a>
+            
+        </div>
+      </div>
+
+
+    <div class="card0">
+    <img src="dlsud.png" alt="Project Description" class="card__image">  <div class="card__content">
+        <p class="card__title">DLSU-D Portal</p>
+        <p class="card__description">
+            <strong><span class="and">Codelympics 2024 Output</span></strong> <br>
+            
+            UI/UX Design prototype for our De La Salle University - Dasmarinas' school portal.
+            The design features five pages: Home, Programs, Vision-Mission, Contacts, and Admission Requirements.
+
+            </p>
+            <a href="https://www.figma.com/proto/4wyXIQaBQ7ifTKbph8nOfn/Untitled?node-id=3-2&t=LaUd8N0z8md8efrR-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A718"><button class="card__button">Live View</button></a>
+            
+    </div>
+    </div> 
+
+    <div class="card0">
+    <img src="swiftair.png" alt="Project Description" class="card__image">  <div class="card__content">
+        <p class="card__title">SwiftAir (Mobile)</p>
+        <p class="card__description">
+            <strong><span class="and">Airline App for User and Admin</span></strong> <br>
+            A high-fidelity prototype with many options. With different functionalities for the USER and ADMIN, 
+            This design boasts a realistic portrayal of an airpline application.
+            </p>
+            <a href="https://www.figma.com/proto/UY5006OEJaQxeSBRPMpCQW/Airlines?node-id=15-2908&t=fqh4FcfioyNSam0C-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=15%3A2908"><button class="card__button">Live View</button></a>
+            
+    </div>
+    </div>  
+
+    <div class="card0">
+        <img src="dlsudcolleges.png" alt="Project Description" class="card__image">  <div class="card__content">
+            <p class="card__title">DLSU-D Colleges (Mobile)</p>
+            <p class="card__description">
+                <strong><span class="and">Colleges and Information</span></strong> <br>
+                A high-fidelity prototype featuring the different colleges in De La Salle University - Dasmarinas.
+                A new logo was created for CSCS, and each college has a different section for additional information.
+                </p>
+                <a href="https://www.figma.com/proto/6xhGSB13w7YOrirokxgfoB/LOGO?node-id=2-5&starting-point-node-id=1%3A2&t=3r2aSq4AjUvhYnar-1"><button class="card__button">Live View</button></a>
+                
+        </div>
+        </div>  
+      
+      
+    
+
+    <div class="card0">
+        <img src="reddit.png" alt="Project Description" class="card__image">  <div class="card__content">
+            <p class="card__title">Reddit Revamp (Mobile)</p>
+            <p class="card__description">
+                <strong><span class="and">Reddit Improved App</span></strong> <br>
+                
+                A high-fidelity revamped Reddit application prototype focused on the elderly.
+                Majority is designed to be more intuitive and easier to use for the general populace.
+
+                </p>
+                <a href="https://www.figma.com/proto/eMqQNr1IYgrbEk3tL3BoSS/Reddit?node-id=1-3&starting-point-node-id=1%3A3&t=oXSAC9tAGoUyUGJk-1"><button class="card__button">Live View</button></a>
+                
+        </div>
+        </div>  
+      
+      
+
+    <div class="card0">
+        <img src="drag.png" alt="Project Description" class="card__image">  <div class="card__content">
+            <p class="card__title">Drag Gestures (Mobile)</p>
+            <p class="card__description">
+                <strong><span class="and">Drag Gesture Animations</span></strong> <br>
+                
+                A high-fidelity prototype with animations featuring characters from 
+                the game, Genshin Impact. With each drag, characters get smaller and returns to full size after swiping.
+
+
+                </p>
+                <a href="https://www.figma.com/proto/UMhxkOEwZ28ittQbVLyzl8/DRAG-GESTURES?node-id=7-34&starting-point-node-id=7%3A34&t=Wce44bMbbm63X2Dk-1"><button class="card__button">Live View</button></a>
+                
+        </div>
+        </div>  
+
+        <div class="card0">
+            <img src="filter.png" alt="Project Description" class="card__image">  <div class="card__content">
+                <p class="card__title">Filter (Mobile)</p>
+                <p class="card__description">
+                    <strong><span class="and">Instagram Clone</span></strong> <br>
+                    
+                    A high-fidelity prototype cloning Instagram's old design. This contains three pages, one for 
+                    signing up, one for the homepage, and another for a picture's information.
+    
+                    </p>
+                    <a href="https://www.figma.com/proto/ivSo7c5iofkCpLUAtI2pWr/1ST-PART?node-id=5-265&t=qJIc9XvYalCv7xKs-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A17"><button class="card__button">Live View</button></a>
+                    
+            </div>
+            </div> 
+      
+      
+    </div>
+
+</div>
+
+
+</section>
+<!-- 
+
+<section id="connect">
+
+    <div  class="section-title" id="lets-talk">
+        <h1>
+            connect with <span class="and">me!</span>
+        </h1>
+    </div>
+   
+    <div class="cardX">
+
+        <a class="social-link4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+          </a>
+          
+          <a class="social-link1" href="https://www.instagram.com/betinafajardo/">
+            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="white">
+              </path>
+            </svg>
+          </a>
+          <a class="social-link2" href="https://github.com/naegis">
+            <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+              </path>
+            </svg> </a>
+          <a class="social-link3" href="discordapp.com/users/762924570381778954">
+            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" fill="white">
+              </path>
+            </svg>
+          </a>
+          <a class="social-link4" href="https://www.linkedin.com/in/betina-fajardo/">
+            <svg fill="#fff" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg> </a>
+          
+        </div>
+    
+            
+</section> -->
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+
+
+<footer id="Connect">
+
+    <div class="footerContainer">
+        <div class="cardX">
+
+            <a class="social-link4">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+              </a>
+              
+              <a class="social-link1" href="https://www.instagram.com/betinafajardo/">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="white">
+                  </path>
+                </svg>
+              </a>
+              <a class="social-link2" href="https://github.com/naegis">
+                <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg> </a>
+              <a class="social-link3" href="discordapp.com/users/762924570381778954">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" fill="white">
+                  </path>
+                </svg>
+              </a>
+              <a class="social-link4" href="https://www.linkedin.com/in/betina-fajardo/">
+                <svg fill="#fff" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg> </a>
+              
+            </div>
+        
+        <div class="footerNav">
+            <ul><li><a href="">home</a></li>
+                <li><a href="">tech</a></li>
+                <li><a href="">projects</a></li>
+
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="footerBottom">
+        <p>Copyright &copy; 2024 | Designed by <span class="designer">naegis</span></p>
+    </div>
+</footer>
+
+
+</body>
+
+
+<script src="script.js"></script>
+
+</html> 
