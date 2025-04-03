@@ -1,3 +1,14 @@
+function sendMail(){
+  let parms = {
+    name : document.getElementById("email").value,
+    email: document.getElementById("email").value,
+    subject: "Portfolio Email",
+    message: document.getElementById("textarea").value
+  }
+  emailjs.send("service_lgl4rfh", "template_ds6r6gp", parms).then(alert("Email has been sent"))
+
+}
+
 function showSidebar(){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'flex'
