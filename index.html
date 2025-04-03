@@ -14,6 +14,16 @@
 
 <link rel="stylesheet" href="styles.css">
 <link rel="shortcut icon" type="image/png" href="me.png">
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "PoZdOC9XXUgyP0wKm",
+      });
+   })();
+</script>
 
 </head>
 
@@ -389,7 +399,7 @@ xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/
 
 
 
-        <div class="cardP">
+        <!-- <div class="cardP">
             <div class="card2__img">
             </div>
             <div class="cardP__descr-wrapper">
@@ -411,7 +421,7 @@ xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/
               </div>
             </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="cardP">
             <div class="card3__img">
@@ -697,7 +707,7 @@ xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/
               <label for="textarea">Message</label>
               <textarea required="" cols="50" rows="10" id="textarea" name="textArea"></textarea>
             </div>
-            <button type="submit" value="Submit" class="form-submit-btn">Submit</button>
+            <button type="submit" class="form-submit-btn" onclick="sendMail()">Submit</button>
           </form>
           
           
@@ -776,7 +786,7 @@ xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/
     </div>
 
     <div class="footerBottom">
-        <p>Copyright &copy; 2024 | Designed by: <span class="designer">naegis</span> | Last Updated: June 15, 2024</p>
+        <p>Copyright &copy; 2024 | Designed by: <span class="designer">naegis</span> </p>
     </div>
 </footer>
 
@@ -787,3 +797,4 @@ xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/
 <script src="script.js"></script>
 
 </html> 
+
