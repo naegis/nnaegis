@@ -24,7 +24,7 @@ function hideSidebar(){
 
 
 function downloadFile() {
-         window.open("Resume_Fajardo, Ma. Betina Julianna C.pdf")
+         window.open("Resume_Fajardo, Ma. Betina.pdf")
       }
 
       const coords = { x: 0, y: 0 };
