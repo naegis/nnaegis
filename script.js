@@ -108,17 +108,19 @@ const colors = [
 
 
 
-circles.forEach(function (circle, index) {
-  circle.x = 0;
-  circle.y = 0;
-  circle.style.backgroundColor = colors[index % colors.length];
-});
+// circles.forEach(function (circle, index) {
+//   circle.x = 0;
+//   circle.y = 0;
+//   circle.style.backgroundColor = colors[index % colors.length];
+// });
 
-window.addEventListener("mousemove", function(e){
-  coords.x = e.clientX;
-  coords.y = e.clientY;
+// window.addEventListener("mousemove", function(e){
+//   coords.x = e.clientX;
+//   coords.y = e.clientY;
   
-});
+// });
+
+
 
 function animateCircles() {
   
