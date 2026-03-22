@@ -1,7 +1,7 @@
 // ===== PROJECT FILTER TABS =====
 // ===== PROJECT FILTER TABS =====
 document.addEventListener('DOMContentLoaded', function () {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('#projects .filter-btn');
   const allCards = Array.from(document.querySelectorAll('#projects-grid .cardP'));
   const PROJECTS_VISIBLE = 3;
   let currentFilter = 'all';

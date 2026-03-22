@@ -2338,7 +2338,7 @@ footer{
 }
  
 
-/* ============================== BENTO TECH GRID ============================== */
+/* ============================== TECH GRID ============================== */
 .skills-section {
   padding-top: 9rem;
   text-align: center;
@@ -2347,92 +2347,73 @@ footer{
   overflow: visible;
 }
 
-.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 110px;
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-top: 2rem;
 }
 
-.bento-card {
-  background: rgba(46, 46, 46, 0.2);
-  border: 1px solid rgba(146, 146, 146, 0.15);
-  border-radius: 16px;
+.tech-chip {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 16px;
-  position: relative;
-  transition: all 0.25s;
+  gap: 6px;
+  padding: 12px 10px;
+  min-width: 74px;
+  background: rgba(40, 40, 40, 0.3);
+  border: 1px solid rgba(146, 146, 146, 0.1);
+  border-radius: 10px;
   cursor: default;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  position: relative;
   overflow: hidden;
 }
 
-.bento-card::before {
+.tech-chip::after {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(254,227,156,0.05), transparent);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FEE39C, transparent);
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.25s ease;
 }
 
-.bento-card:hover {
-  border-color: rgba(254, 227, 156, 0.4);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+.tech-chip:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4), 0 0 30px var(--glow, rgba(254, 227, 156, 0.2));
+  background: rgba(55, 55, 55, 0.35);
 }
 
-.bento-card:hover::before {
+.tech-chip:hover::after {
   opacity: 1;
 }
 
-.bento-wide {
-  grid-column: span 2;
-}
-
-.bento-card svg {
-  width: 36px;
-  height: 36px;
+.tech-chip svg {
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
 }
 
-.bento-wide svg {
-  width: 44px;
-  height: 44px;
-}
-
-.bento-label {
-  font-size: 10px;
+.tech-chip span {
+  font-size: 8.5px;
   font-weight: 600;
-  color: rgba(230, 230, 230, 0.7);
-  text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: rgba(230, 230, 230, 0.55);
+  text-transform: uppercase;
   text-align: center;
-}
-
-.bento-tag {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 8px;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 20px;
-  background: rgba(254, 227, 156, 0.12);
-  border: 1px solid rgba(254, 227, 156, 0.3);
-  color: #FEE39C;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @media (max-width: 1024px) {
-  .bento-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .skills-section {
+    width: 80%;
   }
 }
 
@@ -2441,15 +2422,12 @@ footer{
     width: 90%;
     padding-top: 5rem;
   }
-  .bento-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 90px;
+  .tech-chip {
+    min-width: 64px;
+    padding: 10px 8px;
   }
-  .bento-wide {
-    grid-column: span 1;
-  }
-  .bento-wide svg {
-    width: 36px;
-    height: 36px;
+  .tech-chip svg {
+    width: 26px;
+    height: 26px;
   }
 }
